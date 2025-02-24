@@ -1,0 +1,176 @@
+<section class="hero">
+    <div class="content">
+      <h1>Join the ONDC revolution with Aarambh</h1>
+      <p>Simplified Solutions, Amplified Reach</p>
+      <div class="cta-buttons">
+        <button mat-raised-button class="btn-primary">Get Started</button>
+        <button mat-stroked-button class="btn-secondary">Learn More</button>
+      </div>
+    </div>
+    <div class="graphic">
+      <img src="assets/hero-image.png" alt="Hero Graphic">
+    </div>
+  </section>
+  
+  <section class="why-choose-us">
+    <h2>Why Choose Us?</h2>
+    <p class="description">
+      To build powerful, secure, and future-ready software for ONDC, developers must first understand how the network works. ONDC is not just another e-commerce platform—it is a protocol-driven, decentralized system where seamless integration is key.
+    </p>
+    <p class="description">
+      By mastering ONDC’s protocol standards, security measures, and performance requirements, our team of developers ensure smooth interoperability, compliance, and performance for every network participant we enable.
+    </p>
+  
+    <div class="features">
+      <div class="feature-card">
+        <mat-icon class="icon">integration_instructions</mat-icon>
+        <h3>Three levels of integrations</h3>
+        <p>Choose from integrated app, direct plugin, or custom development options.</p>
+      </div>
+      <div class="feature-card">
+        <mat-icon class="icon">rocket_launch</mat-icon>
+        <h3>Fastest time-to-launch</h3>
+        <p>Skip the ONDC Mock testing, reduce launch time by 50%.</p>
+      </div>
+      <div class="feature-card">
+        <mat-icon class="icon">support_agent</mat-icon>
+        <h3>End-to-end support</h3>
+        <p>From setup to go-live and beyond.</p>
+      </div>
+      <div class="feature-card">
+        <mat-icon class="icon">verified</mat-icon>
+        <h3>RSF 2.0 Compliant</h3>
+        <p>Fully aligned with ONDC’s latest standards.</p>
+      </div>
+      <div class="feature-card">
+        <mat-icon class="icon">update</mat-icon>
+        <h3>Future Ready</h3>
+        <p>All future version updates are automatically incorporated.</p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="our-solutions">
+    <h2>Our Solutions</h2>
+    <p class="description">
+      Here’s how Aarambh helps you get started on ONDC:
+    </p>
+  
+    <div class="solutions">
+      <div class="solution-card">
+        <mat-icon class="icon">code</mat-icon>
+        <h3>Custom Development</h3>
+        <p>Tailored solutions to meet your unique business needs.</p>
+        <div class="know-more-container">
+          <a href="/custom-development" target="_blank" class="know-more">
+            Know More <mat-icon>arrow_forward</mat-icon>
+          </a>
+        </div>
+      </div>
+      <div class="solution-card">
+        <mat-icon class="icon">api</mat-icon>
+        <h3>Aarambh Connector API Suite</h3>
+        <p>Seamless integration with ONDC using our powerful API suite.</p>
+        <div class="know-more-container">
+          <a href="/api-suite" target="_blank" class="know-more">
+            Know More <mat-icon>arrow_forward</mat-icon>
+          </a>
+        </div>
+      </div>
+      <div class="solution-card">
+        <mat-icon class="icon">apps</mat-icon>
+        <h3>Integrated Applications</h3>
+        <p>Ready-to-use applications for quick onboarding.</p>
+        <div class="know-more-container">
+          <a href="/integrated-apps" target="_blank" class="know-more">
+            Know More <mat-icon>arrow_forward</mat-icon>
+          </a>
+        </div>
+      </div>
+      <div class="solution-card">
+        <mat-icon class="icon">business_center</mat-icon>
+        <h3>Strategic Consulting</h3>
+        <p>Expert guidance to maximize your ONDC potential.</p>
+        <div class="know-more-container">
+          <a href="/consulting" target="_blank" class="know-more">
+            Know More <mat-icon>arrow_forward</mat-icon>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="contact-form">
+    <h2>Get in Touch</h2>
+    <p class="description">We'd love to hear from you. Please fill out the form below.</p>
+  
+    <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+      <div class="form-group">
+        <mat-icon class="icon">person</mat-icon>
+        <input
+          matInput
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Name*"
+          [(ngModel)]="formData.name"
+          required
+          #name="ngModel"
+        />
+        <div *ngIf="name.invalid && (name.dirty || name.touched)" class="error">
+          <mat-icon>error</mat-icon> Name is required.
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <mat-icon class="icon">phone</mat-icon>
+        <input
+          matInput
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Phone*"
+          [(ngModel)]="formData.phone"
+          required
+          #phone="ngModel"
+        />
+        <div *ngIf="phone.invalid && (phone.dirty || phone.touched)" class="error">
+          <mat-icon>error</mat-icon> Phone is required.
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <mat-icon class="icon">email</mat-icon>
+        <input
+          matInput
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email"
+          [(ngModel)]="formData.email"
+          #email="ngModel"
+        />
+      </div>
+  
+      <div class="form-group">
+        <mat-icon class="icon">message</mat-icon>
+        <textarea
+          matInput
+          id="message"
+          name="message"
+          placeholder="Message"
+          [(ngModel)]="formData.message"
+          #message="ngModel"
+        ></textarea>
+      </div>
+  
+      <button
+        mat-raised-button
+        type="submit"
+        [disabled]="contactForm.invalid"
+        class="submit-button"
+      >
+        Submit <mat-icon>send</mat-icon>
+      </button>
+    </form>
+  </section>

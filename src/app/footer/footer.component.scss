@@ -1,0 +1,46 @@
+.footer {
+    background: #000;
+    color: #ccc;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  
+    .combination {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+  
+      p {
+        margin: 0;
+        font-size: 0.9rem;
+        font-weight: 400;
+        color: #aaa;
+      }
+  
+      .social-icons {
+        display: flex;
+        gap: 1.2rem;
+  
+        a {
+          font-size: 1.5rem;
+          color: #ccc;
+          transition: color 0.3s ease, transform 0.3s ease;
+  
+          &:hover {
+            color: #fff;
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer .combination {
+      flex-direction: column;
+      text-align: center;
+      gap: 0.5rem;
+    }
+  }

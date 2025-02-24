@@ -1,0 +1,14 @@
+<mat-toolbar class="navbar" [ngClass]="{'scrolled': isScrolled}">
+  <div class="logo">Aarambh</div>
+  <div class="nav-links" [class.hidden]="!isMenuOpen">
+    <a href="#home">Products</a>
+    <a href="#home">Developers</a>
+    <a href="#features">Blogs</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="hamburger" (click)="toggleMenu()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+</mat-toolbar>

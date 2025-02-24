@@ -1,0 +1,101 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  z-index: 1000;
+  transition: background 0.3s ease;
+
+  &.scrolled {
+    background-color: white;
+    color: #424242;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #005cbb;
+  }
+
+  .nav-links {
+    display: flex; // Always show nav-links by default
+    gap: 1.5rem;
+
+    a {
+      color: #424242;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      position: relative;
+
+      &:hover::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 100%;
+        height: 2px;
+        background: #005cbb;
+      }
+    }
+
+    &.hidden {
+      display: none; // Hide nav-links when isMenuOpen is false
+    }
+  }
+
+  .hamburger {
+    display: none; // Hide hamburger by default
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 10;
+
+    .bar {
+      width: 30px;
+      height: 4px;
+      background-color: #333;
+      border-radius: 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    background-color: white;
+
+    .logo {
+      font-size: 1.2rem;
+    }
+
+    .nav-links {
+      display: none; // Hide nav-links by default in mobile view
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: white;
+      padding: 1rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+      a {
+        padding: 0.5rem 1rem;
+      }
+
+      &.hidden {
+        display: flex; // Show nav-links when isMenuOpen is true
+      }
+    }
+
+    .hamburger {
+      display: flex; // Show hamburger in mobile view
+    }
+  }
+}
