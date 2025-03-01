@@ -21,10 +21,12 @@
   
       .social-icons {
         display: flex;
+        align-items: center;
         gap: 1.2rem;
   
         a {
           font-size: 1.5rem;
+          text-decoration: none;
           color: #ccc;
           transition: color 0.3s ease, transform 0.3s ease;
   
@@ -36,6 +38,11 @@
       }
     }
   }
+  .twiter{
+    display: flex;
+    align-items: flex-start;
+
+  }
   
   @media (max-width: 768px) {
     .footer .combination {
@@ -44,3 +51,5 @@
       gap: 0.5rem;
     }
   }
+
+  

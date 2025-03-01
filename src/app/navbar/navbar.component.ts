@@ -7,7 +7,7 @@ import { MatIconModule } from '@angular/material/icon';
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [CommonModule, MatToolbarModule, MatButtonModule, MatIconModule], // Add Angular Material modules
+  imports: [CommonModule, MatToolbarModule, MatButtonModule, MatIconModule], 
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })
@@ -22,5 +22,11 @@ export class NavbarComponent {
 
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
+  }
+  scrollToSection(id: string) {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   }
 }

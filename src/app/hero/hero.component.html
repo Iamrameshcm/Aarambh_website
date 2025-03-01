@@ -8,11 +8,12 @@
       </div>
     </div>
     <div class="graphic">
-      <img src="assets/hero-image.png" alt="Hero Graphic">
+     <img src="../../assets/ondc-logo.png" alt="image">
     </div>
   </section>
   
   <section class="why-choose-us">
+    
     <h2>Why Choose Us?</h2>
     <p class="description">
       To build powerful, secure, and future-ready software for ONDC, developers must first understand how the network works. ONDC is not just another e-commerce platform—it is a protocol-driven, decentralized system where seamless integration is key.
@@ -37,11 +38,11 @@
         <h3>End-to-end support</h3>
         <p>From setup to go-live and beyond.</p>
       </div>
-      <div class="feature-card">
+      <!-- <div class="feature-card">
         <mat-icon class="icon">verified</mat-icon>
         <h3>RSF 2.0 Compliant</h3>
         <p>Fully aligned with ONDC’s latest standards.</p>
-      </div>
+      </div> -->
       <div class="feature-card">
         <mat-icon class="icon">update</mat-icon>
         <h3>Future Ready</h3>
@@ -49,7 +50,75 @@
       </div>
     </div>
   </section>
+
+  <section id="products" class="hero-section">
+    <div class="hero-content">
+      <h1 class="hero-headline">Empowering Seamless Ecommerce Transactions</h1>
+      <p class="hero-subheadline">
+        Aarambh enables Buyer, Seller, and Logistics Apps to integrate seamlessly into the ONDC network, driving efficient and scalable ecommerce solutions.
+      </p>
   
+      <div class="product-grid">
+
+        <div class="product-card">
+          <div class="product-icon">🛒</div>
+          <!-- <h3 class="product-title">Buyer App Platform</h3> -->
+          <h3 class="product-title">Aarambh Cart</h3>
+          <p class="product-description">
+            Enable buyers to search, compare, and purchase products seamlessly across the ONDC network.
+          </p>
+        </div>
+  
+   
+        <div class="product-card">
+          <div class="product-icon">🏢</div>
+          <!-- <h3 class="product-title">Seller App Platform</h3> -->
+          <h3 class="product-title">Aarambh Trade</h3>
+          <p class="product-description">
+            Empower sellers to manage catalogs, orders, and reach more customers efficiently.
+          </p>
+        </div>
+  
+        <div class="product-card">
+          <div class="product-icon"><img src="../../assets/icons8-gps-80.png" alt="location"></div>
+          <!-- <h3 class="product-title">Logistics App Platform</h3> -->
+          <h3 class="product-title">Aarambh Track</h3>
+          <p class="product-description">
+            Streamline logistics operations with real-time tracking and efficient delivery management.
+          </p>
+        </div>
+      </div>
+  
+     
+    </div>
+  </section>
+
+  <section id="supporting-apps" class="supporting-apps-section">
+    <div class="supporting-apps-content">
+      <h2 class="supporting-apps-headline">Supporting Applications</h2>
+      <div class="supporting-apps-grid">
+        <div class="supporting-app-card">
+          <h4 class="card-headline">Payments Settlement in ONDC</h4>
+          <div class="product-icon">💳</div>
+          <h3 class="supporting-app-title">Aarambh Pay</h3>
+          <p class="supporting-app-description">
+            A plug-and-play tool to Eliminate complexities. Achieve compliance effortlessly with our APIs.
+          </p>
+        </div>
+  
+        <div class="supporting-app-card">
+          <h4 class="card-headline">Issue Management in ONDC</h4>
+          <div class="product-icon">🖥️</div>
+          <h3 class="supporting-app-title">Aarambh Desk</h3>
+          <p class="supporting-app-description">
+            Manage your ecommerce operations with a centralized dashboard for analytics, reporting, and insights.
+          </p>
+        </div>
+      </div>
+    </div>
+    <button class="cta-button" (click)="onContactClick()">Contact Us</button>
+  </section>
+
   <section class="our-solutions">
     <h2>Our Solutions</h2>
     <p class="description">
@@ -62,17 +131,17 @@
         <h3>Custom Development</h3>
         <p>Tailored solutions to meet your unique business needs.</p>
         <div class="know-more-container">
-          <a href="/custom-development" target="_blank" class="know-more">
+          <a href="#contact-section" class="know-more">
             Know More <mat-icon>arrow_forward</mat-icon>
           </a>
         </div>
       </div>
       <div class="solution-card">
         <mat-icon class="icon">api</mat-icon>
-        <h3>Aarambh Connector API Suite</h3>
+        <h3>Aarambh API Suite</h3>
         <p>Seamless integration with ONDC using our powerful API suite.</p>
         <div class="know-more-container">
-          <a href="/api-suite" target="_blank" class="know-more">
+          <a href="#contact-section" class="know-more">
             Know More <mat-icon>arrow_forward</mat-icon>
           </a>
         </div>
@@ -82,7 +151,7 @@
         <h3>Integrated Applications</h3>
         <p>Ready-to-use applications for quick onboarding.</p>
         <div class="know-more-container">
-          <a href="/integrated-apps" target="_blank" class="know-more">
+          <a href="#contact-section" class="know-more">
             Know More <mat-icon>arrow_forward</mat-icon>
           </a>
         </div>
@@ -92,7 +161,7 @@
         <h3>Strategic Consulting</h3>
         <p>Expert guidance to maximize your ONDC potential.</p>
         <div class="know-more-container">
-          <a href="/consulting" target="_blank" class="know-more">
+          <a href="#contact-section" class="know-more">
             Know More <mat-icon>arrow_forward</mat-icon>
           </a>
         </div>
@@ -100,7 +169,7 @@
     </div>
   </section>
   
-  <section class="contact-form">
+  <section id="contact-section" class="contact-form">
     <h2>Get in Touch</h2>
     <p class="description">We'd love to hear from you. Please fill out the form below.</p>
   
@@ -172,5 +241,100 @@
       >
         Submit <mat-icon>send</mat-icon>
       </button>
+  
+      <!-- OR Divider -->
+      <div class="or-divider">
+        <span>OR</span>
+      </div>
+  
+      <!-- Calendly Button -->
+      <button
+        mat-raised-button
+        color="primary"
+        class="calendly-button"
+        (click)="openCalendly()"
+      >
+        Book a Meeting <mat-icon>event</mat-icon>
+      </button>
     </form>
   </section>
+
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <p class="description">Have questions? We've got answers. Check out our FAQs below.</p>
+  
+    <mat-accordion>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>What is ONDC?</mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>
+          ONDC (Open Network for Digital Commerce) is a protocol-driven, decentralized system designed to enable seamless integration and interoperability across e-commerce platforms.
+        </p>
+        <a href="/what-is-ondc" target="_blank" class="know-more">
+          Know More <mat-icon>arrow_forward</mat-icon>
+        </a>
+      </mat-expansion-panel>
+  
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>How does Aarambh help with ONDC?</mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>
+          Aarambh provides tools and solutions to help businesses integrate with ONDC, ensuring compliance, performance, and seamless interoperability.
+        </p>
+        <a href="/how-aarambh-helps" target="_blank" class="know-more">
+          Know More <mat-icon>arrow_forward</mat-icon>
+        </a>
+      </mat-expansion-panel>
+  
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>What are the benefits of using Aarambh?</mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>
+          Aarambh offers faster integration, end-to-end support, compliance with ONDC standards, and future-ready solutions.
+        </p>
+        <a href="/benefits-of-aarambh" target="_blank" class="know-more">
+          Know More <mat-icon>arrow_forward</mat-icon>
+        </a>
+      </mat-expansion-panel>
+  
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>Is Aarambh compliant with ONDC standards?</mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>
+          Yes, Aarambh is fully compliant with ONDC’s latest standards, including RSF 2.0.
+        </p>
+        <a href="/ondc-compliance" target="_blank" class="know-more">
+          Know More <mat-icon>arrow_forward</mat-icon>
+        </a>
+      </mat-expansion-panel>
+  
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>How can I get started with Aarambh?</mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>
+          You can get started by contacting our team or exploring our solutions. We offer custom development, API suites, and strategic consulting.
+        </p>
+        <div class="know-more">
+            <a href="/get-started" target="_blank" >
+                Know More 
+              </a>
+              <div class="know-more-icon">
+                <mat-icon>arrow_forward</mat-icon>
+              </div>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </section>
+
+
+
+  

@@ -3,14 +3,20 @@ import { MatButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common'; 
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatCardModule} from '@angular/material/card'
+
+
 
 @Component({
   selector: 'app-hero',
   standalone: true,
-  imports: [MatButton,MatIcon,FormsModule,CommonModule],
+  imports: [MatButton,MatIcon,FormsModule,CommonModule,MatExpansionModule,MatCardModule],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss'
 })
+
+
 export class HeroComponent {
 
   formData = {
@@ -38,4 +44,17 @@ export class HeroComponent {
       message: ''
     };
   }
+
+  onContactClick() {
+    console.log('Contact Us button clicked!');
+    const element = document.getElementById('contact-section');
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  }
+
+  openCalendly() {
+    window.open('https://calendly.com/ondc-aarambh/30min', '_blank');
+  }
+  
 }
