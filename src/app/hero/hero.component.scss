@@ -510,7 +510,7 @@
 
 .hero-section {
   background-color: #f8f9fa;
-  padding: 60px 20px;
+  padding: 60px 20px 1px 20px;
   text-align: center;
 }
 
@@ -520,7 +520,7 @@
 }
 
 .hero-headline {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #333;
   margin-bottom: 20px;
 }
@@ -576,7 +576,7 @@
   background-color: #005cbb;
   color: #fff;
   border: none;
-  padding: 15px 30px;
+  padding: 15px 40px;
   font-size: 1.2rem;
   border-radius: 5px;
   cursor: pointer;
@@ -638,9 +638,11 @@
 }
 
 .supporting-apps-headline {
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 40px;
+  font-size: 1.1rem;
+  color: #666;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: 400;
 }
 
 
@@ -657,7 +659,7 @@
   background-color: #ffffff;
   border-radius: 10px;
   padding: 20px;
-  width: 300px;
+  width: 40%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
@@ -684,10 +686,30 @@
 
 @media (max-width: 600px) {
   .supporting-apps-headline {
-    font-size: 1.8rem;
+    font-size: 1.1rem;
   }
 
   .supporting-app-card {
     width: 100%;
+  }
+}
+
+.or-divider-application {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 1.5rem 0;
+
+  &::before,
+  &::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+  }
+
+  span {
+    padding: 0 1rem;
+    color: #777;
+    font-size: 0.9rem;
   }
 }
